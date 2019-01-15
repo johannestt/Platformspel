@@ -26,13 +26,13 @@ public class EnemyBee : MonoBehaviour
         if (left == true)
         {
             // Sätter hastigheten på enemy till Vänster (Vector2) koverterar från en Vector3
-            rbody.velocity = -(Vector2)transform.right * speed;
+            rbody.velocity = -(Vector2)transform.up * speed;
             transform.localScale = new Vector3(1, 1, 1);
         }
         else
         {
             // Sätter hastigheten på enemy till höger (Vector2) koverterar från en Vector3
-            rbody.velocity = (Vector2)transform.right * speed;
+            rbody.velocity = (Vector2)transform.up * speed;
             transform.localScale = new Vector3(-1, 1, 1);
         }
     }
